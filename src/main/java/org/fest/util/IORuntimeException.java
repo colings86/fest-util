@@ -14,7 +14,6 @@
  */
 package org.fest.util;
 
-import java.io.IOException;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -40,7 +39,7 @@ public final class IORuntimeException extends RuntimeException {
    * @param message the detail message.
    * @param cause the cause of the error.
    */
-  public IORuntimeException(@Nonnull String message, @Nullable IOException cause) {
+  public IORuntimeException(@Nonnull String message, @Nullable Exception cause) {
     super(message, cause);
   }
 }
